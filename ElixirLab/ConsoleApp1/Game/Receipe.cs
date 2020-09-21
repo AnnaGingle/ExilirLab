@@ -12,7 +12,7 @@ namespace ConsoleApp1
         public string Name;
         public string Description;
         public List<Item> Ingredients;
-        public int[] Amounts;
+        public int Amounts;
       
 
 

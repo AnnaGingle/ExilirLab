@@ -11,21 +11,15 @@ public class Item
 {
 
     public string Name;
-    public int[] Amounts;
+    public int Amounts;
     public string Unit;
    
-
-    public Item(string name, int v2, string unit)
+    //Make list of ingredients with instances of type, amount, and unit
+    public Item(string name, int amounts, string unit)
     {
-        this.Name = name;
-        this.Amounts = amounts;
-        this.Unit = unit;
+        Name = name;
+        Amounts = amounts;
+        Unit = unit;
     }
 
-    public int[] amounts { get; }
-
-    internal string Description()
-    {
-        throw new NotImplementedException();
-    }
 }

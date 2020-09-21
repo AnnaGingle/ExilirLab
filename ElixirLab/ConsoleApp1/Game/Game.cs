@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+using static ExilirLab..DataLoader;
 
 namespace ConsoleApp1.Game
 {
     class Game
     {
-        Player player;
+      
         List<Receipe> rececipes = new List<Receipe>();
         public string Title;
 
@@ -19,7 +23,12 @@ namespace ConsoleApp1.Game
 
         private void TitleScreen()
         {
-            Title = "Easy App 2.0";
+            
+
+            string instructionFile = "Data/rText.txt";
+            WriteLine(Utility.Interface.LoadContent(instructionFile));
+
+            Pause();
 
         }
 
